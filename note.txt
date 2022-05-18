@@ -1,3 +1,7 @@
 Template admin:
 - Nama: Material Dashboard
 - Link: https://www.creative-tim.com/product/material-dashboard
+
+Template publik (toko):
+- Material design
+- Link: https://mdbootstrap.com/freebies/jquery/e-commerce/

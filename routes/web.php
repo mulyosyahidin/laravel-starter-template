@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ShopController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,9 +15,9 @@ use App\Http\Controllers\AdminController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [ShopController::class, 'index'])->name('home');
+Route::get('/product', [ShopController::class, 'product'])->name('product');
+Route::get('/checkout', [ShopController::class, 'checkout'])->name('checkout');
 
 Route::get('/admin', [AdminController::class, 'index'])->name('admin.index');
 Route::get('/admin/table', [AdminController::class, 'table'])->name('admin.table');
